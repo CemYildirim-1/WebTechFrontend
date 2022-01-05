@@ -1,13 +1,27 @@
 <template>
   <h5 align=left class="m-2">Übersicht Ihrer Notizen</h5>
+  <div id="container">
+    <div class="col" v-for="notiz in notizen" :key="notiz.id">
+      <div class="card by-white text-black">
+        <img class="card-img" src="../assets/notiz_1.png" alt="Card image">
+        <div class="card-img-overlay">
+          <div class="">
+            <h5 class="card-title">Ihre {{ notiz.id}}</h5>
+            <p class="card-text">{{notiz.entry}}</p>
+            <p class="card-text">{{notiz.ldt}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container-fluid">
   <div class="row row-cols-1 row-cols-md-2 g-4">
     <div class="col" v-for="notiz in notizen" :key="notiz.id">
       <div class="card h-100">
-        <img src="../assets/notiz_1.jpg" class="card-img-top" alt="...">
+        <img src="../assets/notiz_1.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Ihre {{ notiz.id}}. Notiz</h5>
-          <p class="card-text">{{notiz.notiz}}</p>
+          <p class="card-text">{{notiz.entry}}</p>
         </div>
       </div>
     </div>
