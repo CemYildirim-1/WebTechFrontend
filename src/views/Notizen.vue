@@ -55,5 +55,9 @@ export default {
 </script>
 
 <style scoped>
-
+#container {
+  height: 400px;
+  width: 400px;
+  position: relative;
+}
 </style>
