@@ -1,5 +1,5 @@
 <template>
-<h1>Welcome to Notizen</h1>
+  <h5 align=left class="m-2">Übersicht Ihrer Notizen</h5>
   <div class="container-fluid">
   <div class="row row-cols-1 row-cols-md-2 g-4">
     <div class="col" v-for="notiz in notizen" :key="notiz.id">
