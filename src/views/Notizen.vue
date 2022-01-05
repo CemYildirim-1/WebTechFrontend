@@ -1,6 +1,6 @@
 <template>
   <h5 align=left class="m-2">Übersicht Ihrer Notizen</h5>
-  <div id="container">
+  <div class="col-1" id="container">
     <div class="col" v-for="notiz in notizen" :key="notiz.id">
       <div class="card by-white text-black">
         <img class="card-img" src="../assets/notiz_1.png" alt="Card image">
@@ -14,7 +14,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid">
+<!--  <div class="container-fluid">
   <div class="row row-cols-1 row-cols-md-2 g-4">
     <div class="col" v-for="notiz in notizen" :key="notiz.id">
       <div class="card h-100">
@@ -26,7 +26,7 @@
       </div>
     </div>
   </div>
-  </div>
+  </div>-->
 </template>
 
 <script>
