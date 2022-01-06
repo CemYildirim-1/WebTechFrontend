@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import About from '../views/About'
+import NeueNotiz from '../views/NeueNotiz'
 import Notizen from '../views/Notizen'
 import Login from '../views/Login.vue'
 
@@ -12,8 +12,8 @@ const routes = [
   },
   {
     path: '/neue Notiz anlegen',
-    name: 'About',
-    component: About
+    name: 'NeueNotiz',
+    component: NeueNotiz
   },
   {
     path: '/notizen',
