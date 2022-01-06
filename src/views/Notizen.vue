@@ -1,42 +1,23 @@
 <template>
-  <h5 align=left class="m-2">Übersicht Ihrer Notizen</h5>
-  <div class="row row-cols-1  row-cols-md-2 row-cols-md-3 row-cols-md-4" id="container">
-    <div class="col" v-for="notiz in notizen" :key="notiz.id">
-      <div class="card by-white text-black">
-        <img class="card-img" :src="getPicture(notiz)" alt="Card image">
-        <div class="card-img-overlay">
-          <div class="">
-            <h5 class="card-title">Ihre {{ notiz.id}} Notiz</h5>
-            <p class="card-text">{{notiz.entry}}</p>
-            <p class="card-text">{{notiz.ldt}}</p>
-          </div>
-        </div>
-      </div>
+    <h1 align="left">Ihre Notizen</h1>
+    <div class="container-fluid">
+      <notizen-card-list :notizen="this.notizen"></notizen-card-list>
     </div>
-  </div>
+    <notizen-create-form @created="addPerson"></notizen-create-form>
 </template>
 
 <script>
-
+import NotizenCardList from '@/components/NoteList'
+import NotizenCreateForm from '@/components/NewNoteForm'
 export default {
   name: 'Notizen',
+  components: {
+    NotizenCardList,
+    NotizenCreateForm
+  },
   data () {
     return {
-      notizen: [
-      ]
-    }
-  },
-  methods: {
-    getPicture (notiz) {
-      if (notiz.colour === 'blue') {
-        return require('../assets/notiz_1.png')
-      } else if (notiz.colour === 'green') {
-        return require('../assets/notiz_2.png')
-      } else if (notiz.colour === 'lightBlue') {
-        return require('../assets/notiz_3.png')
-      } else if (notiz.colour === 'yellow') {
-        return require('../assets/notiz_4.png')
-      }
+      notizen: []
     }
   },
   mounted () {
@@ -56,10 +37,6 @@ export default {
 }
 </script>
 
+<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#container {
-  height: 1400px;
-  width: 1400px;
-  position: relative;
-}
 </style>
