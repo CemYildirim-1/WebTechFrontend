@@ -23,66 +23,6 @@ export default {
   data () {
     return {
       notizen: [
-        {
-          id: 1,
-          ldt: '17.11.2021 15:45',
-          entry: 'WEBTECH IST GENIAL!!!!!',
-          colour: 'blue'
-        },
-        {
-          id: 2,
-          ldt: '20.11.2021 15:45',
-          entry: 'Morgen muss ich für Webtech lernen, dann bald schreiben wir die Klausur',
-          colour: 'green'
-        },
-        {
-          id: 3,
-          ldt: '20.12.2021 18:45',
-          entry: 'Bald kommt der Weihnachtsmann :D',
-          colour: 'lightBlue'
-        },
-        {
-          id: 4,
-          ldt: '01.01.2022 00:00',
-          entry: 'Frohes neues !!!!! Dieses wird ein mega erfolgreiches Jahr, denn Erfolgt kommt von erfolgen',
-          colour: 'yellow'
-        },
-        {
-          id: 4,
-          ldt: '01.01.2022 00:00',
-          entry: 'Frohes neues !!!!! Dieses wird ein mega erfolgreiches Jahr, denn Erfolgt kommt von erfolgen',
-          colour: 'blue'
-        },
-        {
-          id: 4,
-          ldt: '01.01.2022 00:00',
-          entry: 'Frohes neues !!!!! Dieses wird ein mega erfolgreiches Jahr, denn Erfolgt kommt von erfolgen',
-          colour: 'green'
-        },
-        {
-          id: 4,
-          ldt: '01.01.2022 00:00',
-          entry: 'Frohes neues !!!!! Dieses wird ein mega erfolgreiches Jahr, denn Erfolgt kommt von erfolgen',
-          colour: 'lightBlue'
-        },
-        {
-          id: 4,
-          ldt: '01.01.2022 00:00',
-          entry: 'Frohes neues !!!!! Dieses wird ein mega erfolgreiches Jahr, denn Erfolgt kommt von erfolgen',
-          colour: 'yellow'
-        },
-        {
-          id: 4,
-          ldt: '01.01.2022 00:00',
-          entry: 'Frohes neues !!!!! Dieses wird ein mega erfolgreiches Jahr, denn Erfolgt kommt von erfolgen',
-          colour: 'blue'
-        },
-        {
-          id: 4,
-          ldt: '01.01.2022 00:00',
-          entry: 'Frohes neues !!!!! Dieses wird ein mega erfolgreiches Jahr, denn Erfolgt kommt von erfolgen',
-          colour: 'green'
-        }
       ]
     }
   },
