@@ -1,7 +1,7 @@
 <template>
-  <div class="row row-cols-1  row-cols-md-2 row-cols-md-3 row-cols-md-4" id="container">
-    <div class="col" v-for="notiz in notizen" :key="notiz.id">
-      <note-card :notiz="notiz"></note-card>
+  <div class=" row row-cols-4" id="container">
+    <div class="col m-5" v-for="notiz in notizen" :key="notiz.id">
+      <note-card :notiz="notiz" v-on:changeKey="change()" ></note-card>
      </div>
     </div>
 </template>
@@ -17,6 +17,11 @@ export default {
     notizen: {
       type: Array,
       required: true
+    }
+  },
+  methods: {
+    change () {
+      this.$emit('changeKey')
     }
   }
 }

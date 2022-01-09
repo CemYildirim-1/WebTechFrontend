@@ -1,14 +1,15 @@
 <template>
-    <h1 align="left">Ihre Notizen</h1>
-    <div class="container-fluid">
-      <notizen-card-list :notizen="this.notizen"></notizen-card-list>
-    </div>
-    <notizen-create-form @created="addPerson"></notizen-create-form>
+  <div class="container-fluid">
+      <notizen-card-list :notizen="this.notizen" v-on:changeKey="forceRerender" :key="componentKey " ></notizen-card-list>
+  </div>
+  <notizen-create-form v-on:changeKey="forceRerender"></notizen-create-form>
+
 </template>
 
 <script>
 import NotizenCardList from '@/components/NoteList'
 import NotizenCreateForm from '@/components/NewNoteForm'
+
 export default {
   name: 'Notizen',
   components: {
@@ -17,6 +18,7 @@ export default {
   },
   data () {
     return {
+      componentKey: 0,
       notizen: []
     }
   },
@@ -33,6 +35,11 @@ export default {
         this.notizen.push(notiz)
       }))
       .catch(error => console.log('error', error))
+  },
+  methods: {
+    forceRerender () {
+      this.componentKey += 1
+    }
   }
 }
 </script>
