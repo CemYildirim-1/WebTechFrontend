@@ -80,7 +80,6 @@ export default {
       fetch(endpoint, requestOptions)
         .catch(error => console.log('error', error))
       setTimeout(() => { this.$emit('changeKey3') }, 250)
-      // aufeinmal funktionierte das dynamische laden nicht mehr....
     },
     returnNoteData () {
       return savedNote
