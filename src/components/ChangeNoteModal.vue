@@ -66,7 +66,7 @@ export default {
       headers.append('Content-Type', 'application/json')
 
       const payload = JSON.stringify({
-        ldt: Date(),
+        ldt: Date().replace(' GMT+0100 (Mitteleuropäische Normalzeit)', ''),
         entry: this.note,
         colour: this.noteColour
       })

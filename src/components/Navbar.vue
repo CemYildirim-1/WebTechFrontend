@@ -10,6 +10,7 @@
           <router-link class="nav-link" to="/">Home</router-link>
 <!--          <router-link class="nav-link" to="/neue Notiz anlegen">Neue Notiz</router-link>-->
           <router-link class="nav-link" to="/notizen">Notizen</router-link>
+          <router-link class="nav-link" to="/login">login</router-link>
         </div>
       </div>
     </div>

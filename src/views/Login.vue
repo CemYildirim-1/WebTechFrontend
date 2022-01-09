@@ -1,13 +1,10 @@
 <template>
-  <div>
-    <h6>Das wird die Login-page</h6>
+  <div> <h3>test
+  </h3>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'Login'
-}
 </script>
 
 <style scoped>

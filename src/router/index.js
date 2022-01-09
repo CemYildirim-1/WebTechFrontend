@@ -21,7 +21,7 @@ const routes = [
     component: Notizen
   },
   {
-    path: '/UserLogin',
+    path: '/login',
     name: 'Login',
     component: Login
   }
