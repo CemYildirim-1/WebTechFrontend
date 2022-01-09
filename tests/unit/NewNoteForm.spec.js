@@ -1,7 +1,7 @@
 const { mount } = require('@vue/test-utils')
 const NewNoteForm = require('../../src/components/NewNoteForm')
 
-describe('Testing PersonsCreateForm.vue', () => {
+describe('Testing NotizenCreateForm.vue', () => {
   it('should not show form by default', () => {
     // when
     const wrapper = mount(NewNoteForm)

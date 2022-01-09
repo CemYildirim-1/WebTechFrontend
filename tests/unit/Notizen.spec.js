@@ -4,7 +4,7 @@ import NewNoteForm from '../../src/components/NewNoteForm'
 
 describe('Testing Nptizen.vue', () => {
 
-  it('should have persons card list component', () => {
+  it('should have notizen card list component', () => {
     // when
     const wrapper = mount(Notizen)
 
