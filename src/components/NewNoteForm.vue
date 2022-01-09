@@ -3,7 +3,7 @@
   <i class="bi bi-journal-plus padding"></i>
   </button>
 
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="note-create-offcanvas" aria-labelledby="offcanvas-label">
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="note-create-offcanvas"  aria-labelledby="offcanvas-label">
     <div class="offcanvas-header">
       <h5 id="offcanvas-label">Neue Notiz</h5>
       <button type="button" id="close-offcanvas" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -45,8 +45,7 @@ export default {
   data () {
     return {
       note: '',
-      noteColour: '',
-      serverValidationMessages: []
+      noteColour: ''
     }
   },
   emits: ['created'],

@@ -1,8 +1,9 @@
 <template>
+  <h1>IHRE NOTIZEN</h1>
   <div class="container-fluid">
-      <notizen-card-list :notizen="this.notizen" v-on:changeKey="forceRerender" :key="componentKey " ></notizen-card-list>
+    <notizen-card-list :notizen="this.notizen" v-on:changeKey1="forceRerender()" :key="componentKey" ></notizen-card-list>
   </div>
-  <notizen-create-form v-on:changeKey="forceRerender"></notizen-create-form>
+  <notizen-create-form v-on:changeKey="forceRerender()"></notizen-create-form>
 
 </template>
 

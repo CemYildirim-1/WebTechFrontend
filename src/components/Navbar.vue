@@ -11,9 +11,6 @@
 <!--          <router-link class="nav-link" to="/neue Notiz anlegen">Neue Notiz</router-link>-->
           <router-link class="nav-link" to="/notizen">Notizen</router-link>
         </div>
-        <div class="navbar-nav gap-xxl-5">
-          <router-link class="nav-link" to="/UserLogin">Login</router-link>
-        </div>
       </div>
     </div>
   </nav>

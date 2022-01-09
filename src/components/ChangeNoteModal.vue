@@ -32,13 +32,6 @@
                 Please select a colour.
               </div>
             </div>
-            <div v-if="this.serverValidationMessages">
-              <ul>
-                <li v-for="(message, index) in serverValidationMessages" :key="index" style="color: red">
-                  {{ message }}
-                </li>
-              </ul>
-            </div>
           </form>
         </div>
         <div class="modal-footer">
@@ -86,7 +79,8 @@ export default {
       }
       fetch(endpoint, requestOptions)
         .catch(error => console.log('error', error))
-      setTimeout(() => { this.$emit('changeKey') }, 250)
+      setTimeout(() => { this.$emit('changeKey3') }, 250)
+      // aufeinmal funktionierte das dynamische laden nicht mehr....
     },
     returnNoteData () {
       return savedNote

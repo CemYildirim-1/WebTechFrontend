@@ -7,7 +7,7 @@
             <p class="card-text">{{notiz.entry}}</p>
             <p class="card-text">{{notiz.ldt}}</p>
             <i class="bi bi-journal-x m-2"  @click="deleteNote(notiz)"></i>
-            <change-note-modal :notiz="notiz" v-on:changeKey="change()" ></change-note-modal>
+            <change-note-modal :notiz="notiz" v-on:changeKey3="change()" ></change-note-modal>
           </div>
         </div>
       </div>
@@ -56,10 +56,10 @@ export default {
       }
       fetch(endpoint, requestOptions)
         .catch(error => console.log('error', error))
-      setTimeout(() => { this.$emit('changeKey') }, 250)
+      setTimeout(() => { this.$emit('changeKey2') }, 250)
     },
     change () {
-      this.$emit('changeKey')
+      this.$emit('changeKey2')
     }
   }
 }
